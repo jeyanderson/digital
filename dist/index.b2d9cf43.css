@@ -1,0 +1,227 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:700";
+@font-face {
+  font-family: "Unique";
+  src: url("digital_ninja.01bc2a36.ttf");
+}
+@font-face {
+  font-family: "Mercy";
+  src: url("Sabor_digital.99d1c15d.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+  z-index: -10;
+}
+html, body {
+  background: black;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+#info {
+  position: absolute;
+  top: 350px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  z-index: 100;
+  color: #f6f5ff;
+  opacity: 0.9;
+  font-family: Unique;
+  font-weight: bold;
+  font-size: 9em;
+}
+#info {
+  animation: none;
+}
+#info::after {
+  content: attr(data-text);
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 20px;
+  letter-spacing: 0.27em;
+  text-shadow: -2px 0 #5b81ff, 2px 2px #ff5dd6;
+  animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+@keyframes glitch-anim2 {
+  0% {
+    clip: rect(66px, 9999px, 28px, 0);
+    transform: skew(0.12deg);
+  }
+  5% {
+    clip: rect(85px, 9999px, 40px, 0);
+    transform: skew(0.7deg);
+  }
+  10% {
+    clip: rect(14px, 9999px, 33px, 0);
+    transform: skew(0.81deg);
+  }
+  15% {
+    clip: rect(48px, 9999px, 76px, 0);
+    transform: skew(0.57deg);
+  }
+  20% {
+    clip: rect(77px, 9999px, 16px, 0);
+    transform: skew(0.4deg);
+  }
+  25% {
+    clip: rect(15px, 9999px, 43px, 0);
+    transform: skew(0.27deg);
+  }
+  30% {
+    clip: rect(33px, 9999px, 11px, 0);
+    transform: skew(0.84deg);
+  }
+  35% {
+    clip: rect(50px, 9999px, 51px, 0);
+    transform: skew(0.16deg);
+  }
+  40% {
+    clip: rect(52px, 9999px, 11px, 0);
+    transform: skew(0.21deg);
+  }
+  45% {
+    clip: rect(39px, 9999px, 58px, 0);
+    transform: skew(0.98deg);
+  }
+  50% {
+    clip: rect(88px, 9999px, 42px, 0);
+    transform: skew(0.42deg);
+  }
+  55% {
+    clip: rect(98px, 9999px, 11px, 0);
+    transform: skew(0.51deg);
+  }
+  60% {
+    clip: rect(73px, 9999px, 73px, 0);
+    transform: skew(0.81deg);
+  }
+  65% {
+    clip: rect(82px, 9999px, 59px, 0);
+    transform: skew(1deg);
+  }
+  70% {
+    clip: rect(64px, 9999px, 84px, 0);
+    transform: skew(0.94deg);
+  }
+  75% {
+    clip: rect(41px, 9999px, 44px, 0);
+    transform: skew(0.38deg);
+  }
+  80% {
+    clip: rect(23px, 9999px, 35px, 0);
+    transform: skew(0.54deg);
+  }
+  85% {
+    clip: rect(20px, 9999px, 100px, 0);
+    transform: skew(0.76deg);
+  }
+  90% {
+    clip: rect(9px, 9999px, 96px, 0);
+    transform: skew(0.64deg);
+  }
+  95% {
+    clip: rect(29px, 9999px, 82px, 0);
+    transform: skew(0.47deg);
+  }
+  100% {
+    clip: rect(15px, 9999px, 94px, 0);
+    transform: skew(0.76deg);
+  }
+}
+@keyframes glitch-skew {
+  0% {
+    transform: skew(2deg);
+  }
+  10% {
+    transform: skew(4deg);
+  }
+  20% {
+    transform: skew(4deg);
+  }
+  30% {
+    transform: skew(-2deg);
+  }
+  40% {
+    transform: skew(4deg);
+  }
+  50% {
+    transform: skew(2deg);
+  }
+  60% {
+    transform: skew(-3deg);
+  }
+  70% {
+    transform: skew(-1deg);
+  }
+  80% {
+    transform: skew(-3deg);
+  }
+  90% {
+    transform: skew(-2deg);
+  }
+  100% {
+    transform: skew(-2deg);
+  }
+}
+span {
+  opacity: 0;
+}
+span:nth-child(1) {
+  animation: fade-in 1.2s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(2) {
+  animation: fade-in 1.2s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(3) {
+  animation: fade-in 1.2s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(4) {
+  animation: fade-in 1.2s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(5) {
+  animation: fade-in 1.2s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  100% {
+    opacity: 0.9;
+    filter: blur(0);
+  }
+}
+#resume {
+  position: absolute;
+  top: 920px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  z-index: 100;
+  color: #f6f5ff;
+  font-family: Mercy;
+  font-size: 1.2em;
+  opacity: 0;
+}
+#resume {
+  animation: fade-in 1.2s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+#preloader {
+  font-family: Roboto;
+}
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}
+@media screen and (max-width: 700px) {
+  #info {
+    font-size: 5em;
+  }
+}
+/*# sourceMappingURL=index.b2d9cf43.css.map */
